@@ -6,12 +6,12 @@
         fora
       </h1>
       <div class="links buttons is-centered">
-        <a
-          href="#"
-          class="button is-info is-outlined">Enter</a>
-        <a
-          href="#more"
-          class="button is-outlined">Learn More</a>
+        <nuxt-link
+          to="#"
+          class="button is-info is-outlined">Enter</nuxt-link>
+        <nuxt-link
+          to="/about"
+          class="button is-outlined">Learn More</nuxt-link>
       </div>
     </div>
   </section>
@@ -37,7 +37,7 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;

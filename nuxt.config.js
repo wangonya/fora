@@ -18,6 +18,11 @@ module.exports = {
     // Simple usage
     'nuxt-buefy'
   ],
+  // plugins
+  build: {
+    vendor: []
+  },
+  plugins: [],
   /*
   ** Customize the progress bar color
   */
