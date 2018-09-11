@@ -29,7 +29,7 @@ export default {
 
 <style>
 #welcome {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
