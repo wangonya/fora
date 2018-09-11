@@ -15,12 +15,12 @@
         <div class="navbar-menu" id="navMenu" v-bind:class="{ 'is-active': activator }">
           <div class="navbar-end">
             <!-- navbar items -->
-            <a class="navbar-item">
+            <nuxt-link class="navbar-item" to="/login">
               Login
-            </a>
-            <a class="navbar-item">
+            </nuxt-link>
+            <nuxt-link class="navbar-item" to="/register">
               Register
-            </a>
+            </nuxt-link>
           </div>
         </div>
       </nav>
