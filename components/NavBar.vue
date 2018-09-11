@@ -14,6 +14,12 @@
         </div>
         <div class="navbar-menu" id="navMenu" v-bind:class="{ 'is-active': activator }">
           <div class="navbar-end">
+            <div class="navbar-item">
+              <b-input placeholder="Search..."
+                       size="is-small"
+                       icon="magnify">
+              </b-input>
+            </div>
             <nuxt-link to="/connect" class="navbar-item">
               <b-icon
                 icon="send">
