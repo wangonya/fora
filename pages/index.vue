@@ -7,7 +7,7 @@
       </h1>
       <div class="links buttons is-centered">
         <nuxt-link
-          to="#"
+          to="/feed"
           class="button is-info is-outlined">Enter</nuxt-link>
         <nuxt-link
           to="/about"
