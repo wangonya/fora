@@ -60,9 +60,7 @@
           register: function () {
             firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
               .then(
-                function (user) {
-                  alert('account created')
-                }
+                () => this.$router.replace({ path: '/feed' })
               )
               .catch(function(error) {
                 // Handle Errors here.
