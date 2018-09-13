@@ -22,6 +22,11 @@
             </div>
             <nuxt-link to="/connect" class="navbar-item">
               <b-icon
+                icon="message">
+              </b-icon>
+            </nuxt-link>
+            <nuxt-link to="/connect" class="navbar-item">
+              <b-icon
                 icon="send">
               </b-icon>
             </nuxt-link>

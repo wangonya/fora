@@ -7,16 +7,12 @@
 </template>
 
 <script>
-    import firebase from 'firebase'
     export default {
         name: "index",
         methods: {
           signOut() {
-            firebase.auth().signOut().then(function() {
-              console.log('Signed Out')
-            }, function(error) {
-              console.error('Sign Out Error', error)
-            })
+            this.$store.dispatch('signOut')
+              .then(() => this.$router.replace({ path: '/' }))
           }
         }
     }
