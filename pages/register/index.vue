@@ -53,11 +53,13 @@
         data: function () {
           return {
             email: '',
-            password: ''
+            password: '',
+            loadingComponent: ''
           }
         },
         methods : {
           register: function () {
+            this.loadingComponent = this.$loading.open()
             firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
               .then(
                 () => this.$router.replace({ path: '/feed' })
@@ -73,6 +75,7 @@
                 }
                 console.log(error)
               })
+              .then(() => this.loadingComponent.close())
           }
         }
     }

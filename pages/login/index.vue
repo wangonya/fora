@@ -44,13 +44,15 @@
       data: function () {
         return {
           email: '',
-          password: ''
+          password: '',
+          loadingComponent: ''
         }
       },
       methods : {
         login: function () {
+          this.loadingComponent = this.$loading.open()
           firebase.auth().signInWithEmailAndPassword(this.email, this.password)
-            .then(
+          .then(
               () => this.$router.replace({ path: '/feed' }),
               function(error) {
                 // Handle Errors here.
@@ -64,6 +66,7 @@
                 console.log(error)
               }
             )
+            .then(() => this.loadingComponent.close())
         }
       }
     }
