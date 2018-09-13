@@ -13,4 +13,7 @@ function isAdminRoute(route) {
   if (route.matched.some(record => record.path == '/profile')) {
     return true
   }
+  if (route.matched.some(record => record.path == '/new')) {
+    return true
+  }
 }

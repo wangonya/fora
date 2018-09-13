@@ -20,9 +20,9 @@
                        icon="magnify">
               </b-input>
             </div>
-            <nuxt-link to="/connect" class="navbar-item">
+            <nuxt-link to="/new" class="navbar-item">
               <b-icon
-                icon="message">
+                icon="lead-pencil">
               </b-icon>
             </nuxt-link>
             <nuxt-link to="/connect" class="navbar-item">
