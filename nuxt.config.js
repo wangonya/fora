@@ -18,11 +18,11 @@ module.exports = {
     // Simple usage
     'nuxt-buefy'
   ],
-  // plugins
-  build: {
-    vendor: []
+  router: {
+    middleware: 'router-auth'
   },
-  plugins: [],
+  // plugins
+  plugins: ['~/plugins/fireauth.js'],
   /*
   ** Customize the progress bar color
   */
@@ -31,6 +31,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    // firebase
+    vendor: ['firebase'],
     /*
     ** Run ESLint on save
     */

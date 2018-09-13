@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <nav-bar />
+    <nav-bar/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-  import NavBar from "../components/NavBar";
+  import NavBar from "../components/NavBar"
   export default {
     components: {NavBar}
   }
