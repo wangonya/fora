@@ -30,25 +30,11 @@
                 icon="bell">
               </b-icon>
             </nuxt-link>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <span class="navbar-link">
-                <b-icon
-                  icon="account">
-                </b-icon>
-              </span>
-              <div class="navbar-dropdown is-boxed">
-                <!-- navbar items -->
-                <nuxt-link class="navbar-item" to="/login">
-                  Login
-                </nuxt-link>
-                <nuxt-link class="navbar-item" to="/register">
-                  Register
-                </nuxt-link>
-                <nuxt-link class="navbar-item" to="/profile">
-                  Profile
-                </nuxt-link>
-              </div>
-            </div>
+            <nuxt-link to="/profile" class="navbar-item">
+              <b-icon
+                icon="account">
+              </b-icon>
+            </nuxt-link>
           </div>
         </div>
       </nav>
