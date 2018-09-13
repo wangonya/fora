@@ -44,6 +44,9 @@
                 <nuxt-link class="navbar-item" to="/register">
                   Register
                 </nuxt-link>
+                <nuxt-link class="navbar-item" to="/profile">
+                  Profile
+                </nuxt-link>
               </div>
             </div>
           </div>
