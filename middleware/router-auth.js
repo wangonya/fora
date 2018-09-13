@@ -4,7 +4,13 @@ export default function({ store, redirect, route }) {
 }
 
 function isAdminRoute(route) {
-  if (route.matched.some(record => record.path == '/feed')) {
+  if (route.matched.some(record => record.path == '/notifications')) {
+    return true
+  }
+  if (route.matched.some(record => record.path == '/connect')) {
+    return true
+  }
+  if (route.matched.some(record => record.path == '/profile')) {
     return true
   }
 }
