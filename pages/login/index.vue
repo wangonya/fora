@@ -51,9 +51,7 @@
         login: function () {
           firebase.auth().signInWithEmailAndPassword(this.email, this.password)
             .then(
-              function (user) {
-                alert('welcome!')
-              },
+              () => this.$router.replace({ path: '/feed' }),
               function(error) {
                 // Handle Errors here.
                 const errorCode = error.code;
