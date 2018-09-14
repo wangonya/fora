@@ -3,7 +3,7 @@
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <nuxt-link class="navbar-item" to="/">
-            <img src="icons/icon-64.png" alt="fora logo" height="45">
+            <img src="/icons/icon-64.png" alt="fora logo" height="45">
           </nuxt-link>
 
           <div class="navbar-burger" @click="makeBurger" data-target="navMenu" v-bind:class="{ 'is-active': activator }">
