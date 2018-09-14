@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f257d05-5a71-49e6-98bd-bdc39947a42e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/fireinit.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/fireinit.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -87,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/fireinit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="285">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -123,7 +124,6 @@
         <option value="$PROJECT_DIR$/pages/connect.vue" />
         <option value="$PROJECT_DIR$/pages/feed/index.vue" />
         <option value="$PROJECT_DIR$/pages/index.vue" />
-        <option value="$PROJECT_DIR$/services/fireinit.js" />
         <option value="$PROJECT_DIR$/plugins/fireauth.js" />
         <option value="$PROJECT_DIR$/nuxt.config.js" />
         <option value="$PROJECT_DIR$/layouts/default.vue" />
@@ -139,6 +139,7 @@
         <option value="$PROJECT_DIR$/components/LoginForm.vue" />
         <option value="$PROJECT_DIR$/components/RegisterForm.vue" />
         <option value="$PROJECT_DIR$/pages/register/index.vue" />
+        <option value="$PROJECT_DIR$/services/fireinit.js" />
       </list>
     </option>
   </component>
@@ -323,7 +324,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46915000" />
+    <option name="totallyTimeSpent" value="47056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -496,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/fireinit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="285">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
