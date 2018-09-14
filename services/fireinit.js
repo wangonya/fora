@@ -17,6 +17,6 @@ export const GoogleProvider = new firebase.auth.GoogleAuthProvider()
 export const auth = firebase.auth()
 export const DB = firebase.database()
 export const StoreDB = firebase.firestore()
+const settings = {/* your settings... */ timestampsInSnapshots: true}
+StoreDB.settings(settings)
 export default firebase
-
-// todo: chANGE THIS
