@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f257d05-5a71-49e6-98bd-bdc39947a42e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/register/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +17,7 @@
     <session id="1066397784">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
@@ -32,7 +30,7 @@
         <counts>
           <entry key="fireauth" value="1" />
           <entry key="ico" value="1" />
-          <entry key="js" value="10" />
+          <entry key="js" value="11" />
           <entry key="svg" value="2" />
           <entry key="vue" value="33" />
         </counts>
@@ -40,7 +38,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="11" />
+          <entry key="JavaScript" value="12" />
           <entry key="SVG" value="2" />
           <entry key="Vue.js" value="33" />
         </counts>
@@ -52,14 +50,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="372" />
-          <entry key="vue" value="3065" />
+          <entry key="js" value="389" />
+          <entry key="vue" value="3241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="372" />
-          <entry key="Vue.js" value="3065" />
+          <entry key="JavaScript" value="389" />
+          <entry key="Vue.js" value="3241" />
         </counts>
       </usages-collector>
     </session>
@@ -75,20 +73,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/register/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+            <state relative-caret-position="300">
+              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/login/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/login/index.vue">
+        <entry file="file://$PROJECT_DIR$/middleware/router-auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="54" />
+            <state relative-caret-position="75">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -129,10 +136,10 @@
         <option value="$PROJECT_DIR$/store/index.js" />
         <option value="$PROJECT_DIR$/pages/new/index.vue" />
         <option value="$PROJECT_DIR$/components/NavBar.vue" />
-        <option value="$PROJECT_DIR$/middleware/router-auth.js" />
         <option value="$PROJECT_DIR$/components/Loading.vue" />
         <option value="$PROJECT_DIR$/pages/login/index.vue" />
         <option value="$PROJECT_DIR$/pages/register/index.vue" />
+        <option value="$PROJECT_DIR$/middleware/router-auth.js" />
       </list>
     </option>
   </component>
@@ -152,7 +159,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -299,12 +306,12 @@
       <workItem from="1536729026845" duration="585000" />
       <workItem from="1536760988773" duration="1972000" />
       <workItem from="1536827819224" duration="14790000" />
-      <workItem from="1536856440635" duration="5906000" />
+      <workItem from="1536856440635" duration="8359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40679000" />
+    <option name="totallyTimeSpent" value="43132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -405,13 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/router-auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -450,17 +450,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/register/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="54" />
+        <state relative-caret-position="300">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/register/index.vue">
+    <entry file="file://$PROJECT_DIR$/middleware/router-auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+        <state relative-caret-position="75">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
         </state>
       </provider>
     </entry>

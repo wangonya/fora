@@ -15,7 +15,8 @@
   "dependencies": {
     "firebase": "^5.4.2",
     "nuxt": "^1.0.0",
-    "nuxt-buefy": "^0.2.3"
+    "nuxt-buefy": "^0.2.3",
+    "vuefire": "^2.0.0-alpha.15"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
