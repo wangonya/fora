@@ -1,12 +1,38 @@
 <template>
     <div>
-      posts here
+      <div>
+        <p>{{text}}</p>
+      </div>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "index"
+  import { StoreDB } from '@/services/fireinit.js'
+
+  export default {
+        name: "index",
+        data() {
+          return {
+            text: ""
+          }
+        },
+      async asyncData({app, params, error}) {
+        const ref = StoreDB.collection("test").doc("test")
+
+        let snap
+        try {
+          snap = await ref.get()
+        } catch (e) {
+          // TODO: error handling
+          console.error(e)
+        }
+        return {
+          text: snap.data().text
+        }
+      },
+      methods: {
+
+      }
     }
 </script>
 
