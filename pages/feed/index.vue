@@ -1,26 +1,37 @@
-<template>
+<template class="columns is-mobile">
     <div id="body">
-      <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
+      <div class="box column is-8 is-offset-2">
+        <article class="media">
+          <div class="media-content">
+            <div class="content">
+              <h2>
+                <strong>{{post.title}}</strong>
+              </h2>
+              <p>{{post.story}}</p>
+              <p><span class="level-left"><small>@johnsmith </small></span></p>
             </div>
-            <div class="media-content">
-              <p class="title is-4">John Smith</p>
-              <p class="subtitle is-6">@johnsmith</p>
-            </div>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">
+              <span>
+                <b-icon
+                  icon="heart-outline"
+                  type="is-danger"
+                ></b-icon> <sup>32</sup>
+              </span>
+                </div>
+                <div class="level-item">
+              <span>
+                <b-icon
+                  icon="comment-text-outline"
+                  type="is-danger"
+                ></b-icon> <sup>13</sup>
+              </span>
+                </div>
+              </div>
+            </nav>
           </div>
-
-          <div class="content">
-            {{posts.text}} <a>@bulmaio</a>.
-            <a href="#">#css</a> <a href="#">#responsive</a>
-            <br>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
 </template>
@@ -28,15 +39,16 @@
 <script>
   import { StoreDB } from '@/services/fireinit.js'
 
+
   export default {
-        name: 'index',
-        data() {
-          return {
-            posts: ''
-          }
-        },
+      name: 'index',
+      data() {
+        return {
+          post: ''
+        }
+      },
       async asyncData({app, params, error}) {
-        const ref = StoreDB.collection('test').doc('test')
+        const ref = StoreDB.collection('feed').doc('posts')
 
         let snap
         try {
@@ -46,11 +58,8 @@
           console.error(e)
         }
         return {
-          posts: snap.data()
+          post: snap.data()
         }
-      },
-      methods: {
-
       }
     }
 </script>

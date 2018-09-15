@@ -1,22 +1,16 @@
 <template>
-    <div>
-      new post here
-      <div>
-        <button @click="write">
-          <span v-if="write">Write now</span>
-          <span v-else>Successful!</span>
-        </button>
-      </div>
+    <div id="body">
+      <post-form></post-form>
     </div>
 </template>
 
 <script>
+    import PostForm from "../../components/PostForm"
     export default {
-        name: "index",
-        methods: {
-          write() {
-            this.$store.dispatch('writeToFirestore')
-          }
+      name: "index",
+      components: {PostForm},
+      methods: {
+
         }
     }
 </script>
