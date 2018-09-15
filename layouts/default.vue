@@ -50,5 +50,9 @@ html {
 .links {
   padding-top: 15px;
 }
+
+#body {
+  padding: 25px;
+}
 </style>
 

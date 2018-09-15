@@ -20,6 +20,11 @@
                        icon="magnify">
               </b-input>
             </div>
+            <nuxt-link to="/feed" class="navbar-item">
+              <b-icon
+                icon="book">
+              </b-icon>
+            </nuxt-link>
             <nuxt-link to="/new" class="navbar-item">
               <b-icon
                 icon="lead-pencil">
