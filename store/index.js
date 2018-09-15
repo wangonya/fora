@@ -50,20 +50,6 @@ const createStore = () => {
         }
       },
 
-      async readFromFirestore() {
-        const ref = StoreDB.collection("test").doc("test")
-
-        let snap
-        try {
-          snap = await ref.get()
-        } catch (e) {
-          // TODO: error handling
-          console.error(e)
-        }
-        this.text = snap.data().text
-        this.readSuccessful = true
-      },
-
       signOut ({commit}) {
         auth.signOut().then(() => {
           commit('setUser', null)
