@@ -35,21 +35,6 @@ const createStore = () => {
         }
       },
 
-      async asyncData({app, params, error}) {
-        const ref = StoreDB.collection("test").doc("test")
-
-        let snap
-        try {
-          snap = await ref.get()
-        } catch (e) {
-          // TODO: error handling
-          console.error(e)
-        }
-        return {
-          text: snap.data().text
-        }
-      },
-
       signOut ({commit}) {
         auth.signOut().then(() => {
           commit('setUser', null)

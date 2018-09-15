@@ -1,7 +1,7 @@
 <template>
     <div>
       <div>
-        <p>{{text}}</p>
+        <p>{{posts.text}}</p>
       </div>
     </div>
 </template>
@@ -10,14 +10,14 @@
   import { StoreDB } from '@/services/fireinit.js'
 
   export default {
-        name: "index",
+        name: 'index',
         data() {
           return {
-            text: ""
+            posts: ''
           }
         },
       async asyncData({app, params, error}) {
-        const ref = StoreDB.collection("test").doc("test")
+        const ref = StoreDB.collection('test').doc('test')
 
         let snap
         try {
@@ -27,7 +27,7 @@
           console.error(e)
         }
         return {
-          text: snap.data().text
+          posts: snap.data()
         }
       },
       methods: {
