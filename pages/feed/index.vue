@@ -8,8 +8,10 @@
                 <strong>{{post.data.title}}</strong>
               </h2>
               <p>{{post.data.description}}</p>
-              <p><span class="level-left"><small>@{{post.data.userName}} </small></span></p>
-              <p><span class="level-left"><small>{{post.data.tags}} </small></span></p>
+              <nav class="level is-mobile">
+              <div class="level-left"><span class="level-item"><small>@{{post.data.userName}} </small></span></div>
+              <div class="level-right"><span class="level-item"><small><b-tag rounded>{{post.data.tags}}</b-tag></small></span></div>
+              </nav>
             </div>
             <nav class="level is-mobile">
               <div class="level-left">

@@ -11,7 +11,7 @@
           <small><b-icon
             icon="tag-multiple"
             size="is-small">
-          </b-icon>{{field.tags}}</small>
+          </b-icon><b-tag rounded>{{field.tags}}</b-tag></small>
         </div>
         <br><br>
         <div class="has-text-justified">
