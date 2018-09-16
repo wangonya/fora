@@ -30,10 +30,10 @@
             post: ''
           }
         },
-        asyncData(context) {
+        async asyncData(context) {
           const ref = StoreDB.collection('feed').doc(context.route.params.id)
           let data = []
-          ref.get().then(function(doc) {
+          await ref.get().then(function(doc) {
             if (doc.exists) {
               data.push(doc.data())
             } else {
