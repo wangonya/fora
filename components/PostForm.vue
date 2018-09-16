@@ -27,14 +27,14 @@
       },
       methods: {
         async writeToFirestore() {
-          const ref = StoreDB.collection('feed').doc('posts')
+          const ref = StoreDB.collection('feed')
           const document = {
             title: this.title,
             story: this.story
           }
 
           try {
-            await ref.set(document)
+            await ref.add(document)
           } catch (e) {
             // TODO: error handling
             console.error(e)

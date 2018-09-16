@@ -1,6 +1,6 @@
 <template class="columns is-mobile">
     <div id="body">
-      <div class="box column is-8 is-offset-2">
+      <div class="box column is-8 is-offset-2" v-for="(post, index) of posts" :key='index'>
         <article class="media">
           <div class="media-content">
             <div class="content">
@@ -44,21 +44,29 @@
       name: 'index',
       data() {
         return {
-          post: ''
+          posts: ''
         }
       },
       async asyncData({app, params, error}) {
-        const ref = StoreDB.collection('feed').doc('posts')
+        const ref = StoreDB.collection('feed')
 
-        let snap
+        let snap = []
+        // let all
         try {
-          snap = await ref.get()
-        } catch (e) {
+          await ref.get().then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+              // doc.data() is never undefined for query doc snapshots
+              snap.push(doc.data())
+            })
+          })
+        }
+        catch (e) {
           // TODO: error handling
           console.error(e)
         }
+
         return {
-          post: snap.data()
+          posts: snap
         }
       }
     }
