@@ -17,7 +17,7 @@
             <div class="navbar-item">
               <b-input placeholder="Search..."
                        size="is-small"
-                       icon="magnify">
+                       icon="magnify" rounded>
               </b-input>
             </div>
             <nuxt-link to="/feed" class="navbar-item">

@@ -2,7 +2,7 @@
     <div>
       <div>{{user.userName}}</div>
       <br><br>
-      <div class="button is-danger" v-on:click="signOut">Sign Out</div>
+      <div class="button is-danger is-rounded is-outlined" v-on:click="signOut">Sign Out</div>
     </div>
 </template>
 

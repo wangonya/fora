@@ -8,7 +8,7 @@
           </p>
         </div>
         <br><br>
-        <button class="button is-success" v-on:click="writeToFirestore">Publish</button>
+        <button class="button is-success is-rounded is-outlined" v-on:click="writeToFirestore">Publish</button>
         <br><br>
         <div>
           <input type="text" placeholder="Title" minlength="2"

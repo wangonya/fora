@@ -27,7 +27,7 @@
                    password-reveal>
           </b-input>
         </b-field>
-        <a href="#" class="is-info button is-outlined" v-on:click="login">Login</a>
+        <a href="#" class="is-info button is-outlined is-rounded" v-on:click="login">Login</a>
       </div>
     </div>
     <nuxt-link to="/register">Or create an account</nuxt-link>

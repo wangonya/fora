@@ -8,10 +8,10 @@
       <div class="links buttons is-centered">
         <nuxt-link
           to="/feed"
-          class="button is-info is-outlined">Enter</nuxt-link>
+          class="button is-info is-outlined is-rounded">Enter</nuxt-link>
         <nuxt-link
           to="/about"
-          class="button is-outlined">Learn More</nuxt-link>
+          class="button is-outlined is-rounded">Learn More</nuxt-link>
       </div>
     </div>
   </section>
