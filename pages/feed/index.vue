@@ -7,8 +7,9 @@
               <h2>
                 <strong>{{post.title}}</strong>
               </h2>
-              <p>{{post.story}}</p>
-              <p><span class="level-left"><small>@johnsmith </small></span></p>
+              <p>{{post.description}}</p>
+              <p><span class="level-left"><small>@{{post.userName}} </small></span></p>
+              <p><span class="level-left"><small>{{post.tags}} </small></span></p>
             </div>
             <nav class="level is-mobile">
               <div class="level-left">
