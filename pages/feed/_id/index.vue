@@ -1,12 +1,53 @@
-<template>
-    <div>
-      single post here
+<template >
+    <div class="content column is-8 is-offset-2" id="body">
+      <div v-for="(field, index) in post" :key='index'>
+        <h1 class="has-text-centered">{{field.title}}</h1>
+        <div class="has-text-centered">
+          <small><b-icon
+            icon="account"
+            size="is-small">
+          </b-icon>{{field.userName}}</small>
+          <br>
+          <small><b-icon
+            icon="tag-multiple"
+            size="is-small">
+          </b-icon>{{field.tags}}</small>
+        </div>
+        <br><br>
+        <div class="has-text-justified">
+          <p>{{field.story}}</p>
+        </div>
+      </div>
     </div>
 </template>
 
 <script>
+    import { StoreDB } from '@/services/fireinit.js'
     export default {
-        name: "index"
+        name: "index",
+        data() {
+          return {
+            post: ''
+          }
+        },
+        asyncData(context) {
+          const ref = StoreDB.collection('feed').doc(context.route.params.id)
+          let data = []
+          ref.get().then(function(doc) {
+            if (doc.exists) {
+              console.log("Document data:", doc.data())
+              data.push(doc.data())
+            } else {
+              // doc.data() will be undefined in this case
+              console.log("No such document!")
+            }
+          }).catch(function(error) {
+            console.log("Error getting document:", error)
+          })
+            return{
+              post: data
+            }
+        },
     }
 </script>
 
