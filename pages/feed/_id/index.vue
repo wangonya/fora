@@ -1,7 +1,7 @@
 <template >
     <div class="content column is-8 is-offset-2" id="body">
       <div v-for="(field, index) in post" :key='index'>
-        <h1 class="has-text-centered">{{field.title}}</h1>
+        <h1 class="has-text-centered" >{{field.title}}</h1>
         <div class="has-text-centered">
           <small><b-icon
             icon="account"
@@ -15,7 +15,7 @@
         </div>
         <br><br>
         <div class="has-text-justified">
-          <p>{{field.story}}</p>
+          <div v-html="$md.render(field.story)"></div>
         </div>
       </div>
     </div>

@@ -16,8 +16,15 @@ module.exports = {
   // buefy module
   modules: [
     // Simple usage
-    'nuxt-buefy'
+    'nuxt-buefy',
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    preset: 'default',
+    injected: true,
+    linkify: true,
+    breaks: true
+  },
   router: {
     middleware: 'router-auth'
   },
