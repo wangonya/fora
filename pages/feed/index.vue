@@ -1,6 +1,6 @@
 <template class="columns is-mobile">
     <div id="body">
-      <div class="box column is-8 is-offset-2" v-for="(post, index) in posts" :key='index' v-on:click="openPost">
+      <div class="box column is-8 is-offset-2" v-for="(post, index) in posts" :key='index' v-on:click="openPost(post.id)">
         <article class="media">
           <div class="media-content">
             <div class="content">
@@ -40,7 +40,6 @@
 <script>
   import { StoreDB } from '@/services/fireinit.js'
 
-
   export default {
       name: 'index',
       data() {
@@ -70,8 +69,8 @@
         }
       },
       methods: {
-        openPost () {
-          console.log('you just clicked post')
+        openPost: function (id) {
+          this.$router.push(`/feed/${id}`)
         }
       }
     }
