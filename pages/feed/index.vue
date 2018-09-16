@@ -1,15 +1,15 @@
 <template class="columns is-mobile">
     <div id="body">
-      <div class="box column is-8 is-offset-2" v-for="(post, index) of posts" :key='index'>
+      <div class="box column is-8 is-offset-2" v-for="(post, index) in posts" :key='index' v-on:click="openPost">
         <article class="media">
           <div class="media-content">
             <div class="content">
               <h2>
-                <strong>{{post.title}}</strong>
+                <strong>{{post.data.title}}</strong>
               </h2>
-              <p>{{post.description}}</p>
-              <p><span class="level-left"><small>@{{post.userName}} </small></span></p>
-              <p><span class="level-left"><small>{{post.tags}} </small></span></p>
+              <p>{{post.data.description}}</p>
+              <p><span class="level-left"><small>@{{post.data.userName}} </small></span></p>
+              <p><span class="level-left"><small>{{post.data.tags}} </small></span></p>
             </div>
             <nav class="level is-mobile">
               <div class="level-left">
@@ -52,12 +52,11 @@
         const ref = StoreDB.collection('feed')
 
         let snap = []
-        // let all
         try {
           await ref.get().then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
               // doc.data() is never undefined for query doc snapshots
-              snap.push(doc.data())
+              snap.push({id: doc.id, data:doc.data()})
             })
           })
         }
@@ -68,6 +67,11 @@
 
         return {
           posts: snap
+        }
+      },
+      methods: {
+        openPost () {
+          console.log('you just clicked post')
         }
       }
     }
