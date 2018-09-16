@@ -35,7 +35,6 @@
           let data = []
           ref.get().then(function(doc) {
             if (doc.exists) {
-              console.log("Document data:", doc.data())
               data.push(doc.data())
             } else {
               // doc.data() will be undefined in this case
