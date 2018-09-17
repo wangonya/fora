@@ -17,6 +17,7 @@
     "firebase": "^5.4.2",
     "nuxt": "^1.0.0",
     "nuxt-buefy": "^0.2.3",
+    "vue-disqus": "^3.0.4",
     "vuefire": "^2.0.0-alpha.15"
   },
   "devDependencies": {

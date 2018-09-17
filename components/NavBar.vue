@@ -1,6 +1,6 @@
 <template>
     <div id="navbar">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <nuxt-link class="navbar-item" to="/">
             <img src="/icons/icon-64.png" alt="fora logo" height="45">

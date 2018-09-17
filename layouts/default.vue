@@ -52,7 +52,9 @@ html {
 }
 
 #body {
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 60px;
 }
 </style>
 

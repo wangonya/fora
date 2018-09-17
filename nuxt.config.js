@@ -29,7 +29,7 @@ module.exports = {
     middleware: 'router-auth'
   },
   // plugins
-  plugins: ['~/plugins/fireauth.js'],
+  plugins: ['~/plugins/fireauth.js', '~/plugins/disqus'],
   /*
   ** Customize the progress bar color
   */

@@ -18,16 +18,20 @@
           <div v-html="$md.render(field.story)"></div>
         </div>
       </div>
+      <disqus :identifier="page_id"></disqus>
     </div>
 </template>
 
 <script>
     import { StoreDB } from '@/services/fireinit.js'
+    import Disqus from "../../../components/disqus"
     export default {
         name: "index",
-        data() {
+      components: {Disqus},
+      data() {
           return {
-            post: ''
+            post: '',
+            page_id: ''
           }
         },
         async asyncData(context) {
@@ -44,7 +48,8 @@
             console.log("Error getting document:", error)
           })
             return{
-              post: data
+              post: data,
+              page_id: context.route.params.id
             }
         },
     }
