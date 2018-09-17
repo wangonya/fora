@@ -18,16 +18,15 @@
           <div v-html="$md.render(field.story)"></div>
         </div>
       </div>
-      <disqus :identifier="page_id"></disqus>
-    </div>
+      <div class="comments">
+        <vue-disqus shortname="fora-1" :identifier="page_id" url="https://fora-cuuormqxav.now.sh/feed/"></vue-disqus>
+      </div>    </div>
 </template>
 
 <script>
     import { StoreDB } from '@/services/fireinit.js'
-    import Disqus from "../../../components/disqus"
     export default {
         name: "index",
-      components: {Disqus},
       data() {
           return {
             post: '',
@@ -56,5 +55,7 @@
 </script>
 
 <style scoped>
-
+  .comments {
+    padding-top: 30px;
+  }
 </style>
