@@ -19,8 +19,9 @@
         </div>
       </div>
       <div class="comments">
-        <vue-disqus shortname="fora-1" :identifier="page_id" url="https://fora-cuuormqxav.now.sh/feed/"></vue-disqus>
-      </div>    </div>
+        <vue-disqus ref="disqus" v-bind:shortname="disqusShortname" :identifier="disqusId" :url="url" :title="url"></vue-disqus>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -51,6 +52,22 @@
               page_id: context.route.params.id
             }
         },
+      computed: {
+        disqusShortname () {
+          return 'fora-1'
+        },
+        disqusId () { // env used to avoid re-use from dev to production
+          return `${process.env.NODE_ENV}-${this.disqusShortname}-${this.page_id}`
+        },
+        url () {
+          return this.$nuxt.$route.fullPath
+        }
+      },
+      watch: {
+        '$nuxt.$route.fullPath'() {
+          this.$refs.disqus.init()
+        }
+      }
     }
 </script>
 
