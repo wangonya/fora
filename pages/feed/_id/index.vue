@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="comments">
-        <vue-disqus ref="disqus" v-bind:shortname="disqusShortname" :identifier="disqusId" :url="url" :title="url"></vue-disqus>
+        <vue-disqus ref="disqus" v-bind:shortname="disqusShortname" :identifier="disqusId"></vue-disqus>
       </div>
     </div>
 </template>
@@ -58,13 +58,10 @@
         },
         disqusId () { // env used to avoid re-use from dev to production
           return `${process.env.NODE_ENV}-${this.disqusShortname}-${this.page_id}`
-        },
-        url () {
-          return this.$nuxt.$route.fullPath
         }
       },
       watch: {
-        '$nuxt.$route.fullPath'() {
+        '$nuxt.$route.path'() {
           this.$refs.disqus.init()
         }
       }
