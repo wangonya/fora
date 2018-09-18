@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f257d05-5a71-49e6-98bd-bdc39947a42e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/feed/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/connect/index.vue" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +37,7 @@
           <entry key="js" value="31" />
           <entry key="json" value="3" />
           <entry key="svg" value="2" />
-          <entry key="vue" value="70" />
+          <entry key="vue" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -47,7 +47,7 @@
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="32" />
           <entry key="SVG" value="2" />
-          <entry key="Vue.js" value="70" />
+          <entry key="Vue.js" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -59,14 +59,14 @@
         <counts>
           <entry key="js" value="858" />
           <entry key="json" value="2" />
-          <entry key="vue" value="8254" />
+          <entry key="vue" value="8262" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="858" />
-          <entry key="Vue.js" value="8254" />
+          <entry key="Vue.js" value="8262" />
         </counts>
       </usages-collector>
     </session>
@@ -82,11 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/feed/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="34" selection-start-line="27" selection-end-line="28" />
+            <state relative-caret-position="315">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/NavBar.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -154,9 +163,9 @@
         <option value="$PROJECT_DIR$/nuxt.config.js" />
         <option value="$PROJECT_DIR$/plugins/disqus-count.js" />
         <option value="$PROJECT_DIR$/pages/feed/_id/index.vue" />
-        <option value="$PROJECT_DIR$/components/NavBar.vue" />
         <option value="$PROJECT_DIR$/pages/new/index.vue" />
         <option value="$PROJECT_DIR$/pages/feed/index.vue" />
+        <option value="$PROJECT_DIR$/components/NavBar.vue" />
       </list>
     </option>
   </component>
@@ -221,12 +230,6 @@
               <item name="fora" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fora" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fora" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="connect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fora" type="b2602c69:ProjectViewProjectNode" />
@@ -349,12 +352,12 @@
       <workItem from="1537197557462" duration="6819000" />
       <workItem from="1537213643007" duration="821000" />
       <workItem from="1537248172671" duration="6703000" />
-      <workItem from="1537289251245" duration="774000" />
+      <workItem from="1537289251245" duration="1065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106888000" />
+    <option name="totallyTimeSpent" value="107179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -362,7 +365,7 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1502146" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1502146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
@@ -377,7 +380,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Terminal" order="3" visible="true" weight="0.2532189" />
+      <window_info anchor="right" id="Terminal" order="3" visible="true" weight="0.2532189" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/NavBar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/new/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -574,8 +570,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/feed/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="34" selection-start-line="27" selection-end-line="28" />
+        <state relative-caret-position="315">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/NavBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
