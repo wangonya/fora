@@ -10,18 +10,19 @@
               <p>{{post.description}}</p>
               <nav class="level is-mobile">
               <div class="level-left"><span class="level-item"><small>@{{post.userName}} </small></span></div>
-              <div class="level-right"><span class="level-item"><small><b-tag rounded>{{post.tags}}</b-tag></small></span></div>
+              <div class="level-right"><span class="level-item"><small>
+                <b-tag rounded class="is-danger" v-if="post.tags === 'question'">{{post.tags}}</b-tag>
+                <b-tag rounded class="is-info" v-if="post.tags === 'study'">{{post.tags}}</b-tag>
+                <b-tag rounded class="is-primary" v-if="post.tags === 'blog'">{{post.tags}}</b-tag>
+              </small></span></div>
               </nav>
             </div>
             <nav class="level is-mobile">
               <div class="level-left">
-                <div class="level-item">
-                </div>
-                <div class="level-item">
+                <div class="level-item is-link">
               <span>
                 <b-icon
                   icon="comment-text-outline"
-                  type="is-danger"
                 ></b-icon> <sup><vue-disqus-count :identifier="disqusId+post.id"/></sup>
               </span>
                 </div>
@@ -40,7 +41,10 @@
       name: 'index',
       data() {
         return {
-          posts: ''
+          posts: '',
+          checkTag: {
+            'is-danger': true
+          }
         }
       },
       async asyncData({app, params, error}) {
