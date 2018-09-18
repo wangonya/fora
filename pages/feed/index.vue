@@ -16,19 +16,13 @@
             <nav class="level is-mobile">
               <div class="level-left">
                 <div class="level-item">
-              <span>
-                <b-icon
-                  icon="heart-outline"
-                  type="is-danger"
-                ></b-icon> <sup>32</sup>
-              </span>
                 </div>
                 <div class="level-item">
               <span>
                 <b-icon
                   icon="comment-text-outline"
                   type="is-danger"
-                ></b-icon> <sup>13</sup>
+                ></b-icon> <sup><vue-disqus-count :identifier="disqusId+post.id"/></sup>
               </span>
                 </div>
               </div>
@@ -73,6 +67,14 @@
       methods: {
         openPost: function (id) {
           this.$router.push(`/feed/${id}`)
+        }
+      },
+      computed: {
+        disqusShortname () {
+          return 'fora-1'
+        },
+        disqusId () { // env used to avoid re-use from dev to production
+          return `${process.env.NODE_ENV}-${this.disqusShortname}-`
         }
       }
     }

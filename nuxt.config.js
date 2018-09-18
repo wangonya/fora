@@ -29,7 +29,7 @@ module.exports = {
     middleware: 'router-auth'
   },
   // plugins
-  plugins: ['~/plugins/fireauth.js', '~/plugins/disqus'],
+  plugins: ['~/plugins/fireauth.js', '~/plugins/disqus', '~/plugins/disqus-count'],
   /*
   ** Customize the progress bar color
   */
@@ -38,6 +38,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    transpile: ['~/plugins/disqus-count'],
     // firebase
     vendor: ['firebase'],
     /*
