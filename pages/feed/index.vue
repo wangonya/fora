@@ -5,12 +5,12 @@
           <div class="media-content">
             <div class="content">
               <h2>
-                <strong>{{post.data.title}}</strong>
+                <strong>{{post.title}}</strong>
               </h2>
-              <p>{{post.data.description}}</p>
+              <p>{{post.description}}</p>
               <nav class="level is-mobile">
-              <div class="level-left"><span class="level-item"><small>@{{post.data.userName}} </small></span></div>
-              <div class="level-right"><span class="level-item"><small><b-tag rounded>{{post.data.tags}}</b-tag></small></span></div>
+              <div class="level-left"><span class="level-item"><small>@{{post.userName}} </small></span></div>
+              <div class="level-right"><span class="level-item"><small><b-tag rounded>{{post.tags}}</b-tag></small></span></div>
               </nav>
             </div>
             <nav class="level is-mobile">
@@ -51,7 +51,13 @@
           await ref.get().then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
               // doc.data() is never undefined for query doc snapshots
-              snap.push({id: doc.id, data:doc.data()})
+              snap.push({
+                id: doc.id,
+                title: doc.data().title,
+                userName: doc.data().userName,
+                description: doc.data().description,
+                tags: doc.data().tags
+              })
             })
           })
         }
@@ -59,7 +65,7 @@
           // TODO: error handling
           console.error(e)
         }
-
+        console.log(snap)
         return {
           posts: snap
         }
