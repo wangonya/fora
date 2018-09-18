@@ -65,7 +65,6 @@
           // TODO: error handling
           console.error(e)
         }
-        console.log(snap)
         return {
           posts: snap
         }
