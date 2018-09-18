@@ -19,8 +19,22 @@
           <textarea type="text" placeholder="Add a short description" minlength="10" v-model="description" class="small"/>
         </div>
         <br>
-        <div>
-          <textarea type="text" placeholder="tag1, tag2, tag3" minlength="30" v-model="tags" class="small"/>
+        <div class="block">
+          <b-radio v-model="tags"
+                   native-value="post"
+                   type="is-primary">
+            Blog Post
+          </b-radio>
+          <b-radio v-model="tags"
+                   native-value="study"
+                   type="is-info">
+            Bible Study
+          </b-radio>
+          <b-radio v-model="tags"
+                   native-value="question"
+                   type="is-danger">
+            Question
+          </b-radio>
         </div>
         <br>
         <div>
