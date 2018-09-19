@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="body">
       notifications here. protected
     </div>
 </template>
