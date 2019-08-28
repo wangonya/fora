@@ -1,7 +1,5 @@
 # fora
 
-> Where Seventh-day Adventist Christians share ideas and help each other grow.
-
 ## Build Setup
 
 ``` bash
