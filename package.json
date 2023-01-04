@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.1",
     "firebase": "^5.4.2",
-    "nuxt": "^1.0.0",
+    "nuxt": "^3.0.0",
     "nuxt-buefy": "^0.2.3",
     "vue-disqus": "^3.0.4",
     "vue-disqus-count": "^1.0.1",
